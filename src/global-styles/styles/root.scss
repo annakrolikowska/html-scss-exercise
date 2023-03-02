@@ -1,7 +1,3 @@
-/// Root Styles file
-/// Here we define all the root variables we need for our project.
-/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
-
 :root {
     
     --color-primary-background: #0F162D;
@@ -9,26 +5,8 @@
     --color-blue: 108, 124, 255;
     --color-aqua: 42, 255, 255;
     --color-yellow: 255, 246, 41;
-
     --color-secondary-background: #272D42;
     --color-light: #FFFFFF;
     --color-dark: #000000
 }
 
-$color-dupondary: red;
-
-// @mixin transparentBackgroundColorMixin($alpha,$color) {
-//     background-color: rgba($color, $alpha);
-//   }
-
-// .home-page__icon-container {
-//     @include transparentBackgroundColorMixin(0.1, $color-dupondary);
-//     @include transparentBackgroundColorMixin(0.1, var(--color-primary));
-//     background-color: rgba(var(--color-pink), 0.1);
-//     height: 56px;
-//     width: 56px;
-//     border-radius: 14px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
