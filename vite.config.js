@@ -7,8 +7,8 @@ export default {
     css: {
         devSourcemap: true,
     },
+    defineConfig: {
+        base: '/html-scss-exercise/'
+    }
 }
 
-export default defineConfig({
-    base: '/html-scss-exercise/'
-})
