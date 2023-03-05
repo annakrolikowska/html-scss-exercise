@@ -91,6 +91,7 @@
       padding: 24px 16px;
       border-radius: 24px;
       min-height: 192px;
+      min-width: 200px;
     }
 
     & h3 {
@@ -104,7 +105,7 @@
       line-height: var(--lh-body-small);
       opacity: 50%;
 
-      @media (min-width: 1025px) {
+      @media (min-width: 1024px) {
         --fs-body-small: var(--fs-body);
         --lh-body-small: var(--lh-body);
       }
