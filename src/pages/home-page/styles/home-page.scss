@@ -1,2 +1,175 @@
-/// Homepage Styles File
-/// Here we import all the Styles files we need for our Homepage.
+.home-page{
+  --fs-header-large: 32px;
+  --fs-header-small: 20px;
+  --fs-body: 16px;
+  --fs-body-small: 14px;
+
+  --lh-header-large: 40px;
+  --lh-header-small: 20px;
+  --lh-body: 24px;
+  --lh-body-small: 22px;
+
+  max-width: 496px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  & &__text-container {
+    padding: 0 4.2%;
+    margin: 48px 0 24px; 
+  }
+
+  & &__title {
+    font-weight: 500;
+    font-size: var(--fs-header-large);
+    line-height: var(--lh-header-large);
+    letter-spacing: -0.2%;
+    margin-bottom: 16px;
+  }
+
+  & &__paragraph {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+  }
+
+  & &__list {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+    padding: 0 4.2%;
+  }
+
+  & &__list-item {
+    background-color: var(--color-secondary-background);
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+
+    & h3 {
+      font-size: var(--fs-header-small);
+      font-weight: 500;
+      line-height: var(--lh-header-small);
+    }
+
+    & p {
+      font-size: var(--fs-body-small);
+      line-height: var(--lh-body-small);
+      opacity: 50%;
+    }
+  }
+
+  & &__icon-container {
+    height: 56px;
+    width: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+      &--pink {
+      background-color: rgba(var(--color-pink), 0.1);
+      
+      &:hover {
+        background-color: rgba(var(--color-pink), 0.5);
+      }
+    }
+
+    &--blue {
+      background-color: rgba(var(--color-blue), 0.1);
+
+      &:hover {
+        background-color: rgba(var(--color-blue), 0.5);
+      }
+    }
+
+    &--aqua {
+      background-color: rgba(var(--color-aqua), 0.1);
+
+      &:hover {
+        background-color: rgba(var(--color-aqua), 0.5);
+      }
+    }
+
+    &--yellow {
+      background-color: rgba(var(--color-yellow), 0.1);
+
+      &:hover {
+        background-color: rgba(var(--color-yellow), 0.5);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    
+    & &__text-container {
+      padding: 0;
+      margin-top: 247px;
+    }
+
+    & &__title {
+      --fs-header-large: 48px;
+      --lh-header-large: 56px;
+    }
+
+    & &__list {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+
+    & &__list-item {
+      min-height: 178px;
+      padding: 20px 16px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    margin: 159px 152px;
+    max-width: 100%;
+    justify-content: space-between;
+
+    & &__text-container {
+      margin: 0;
+      width: 41%;
+    }
+    
+    & &__title {
+      margin-bottom: 24px;
+    }
+
+    & &__list  {
+      width: 49.3%;
+      gap: 31px 24px;
+    }
+
+    & &__list-item {
+      padding: 24px 16px;
+      border-radius: 24px;
+      min-height: 192px;
+      min-width: 200px;
+
+      & p {
+        --fs-body-small: var(--fs-body);
+        --lh-body-small: var(--lh-body);
+      } 
+    }
+
+    & &__icon {
+      height: 32px;
+      width: 32px;
+    }
+
+    & &__icon-container {
+      height: 64px;
+      width: 64px;
+      border-radius: 16px;
+    }
+  }
+}
